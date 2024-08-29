@@ -1,0 +1,18 @@
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "pypi_test_yomichi"
+version = "0.1.0"
+description = "Test package for using PyPI and GitHub"
+authors = ["Yuichi Motoyama <yomichi314@gmail.com>"]
+packages = [
+    { include = "pypi_test_yomichi", from = "src" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+[tool.poetry.dev-dependencies]
+pytest = "^8.3"
