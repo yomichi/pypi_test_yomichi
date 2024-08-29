@@ -7,6 +7,7 @@ jobs:
     name: Build wheels on ${{ matrix.os }} for Python ${{ matrix.python-version }}
     runs-on: ${{ matrix.os }}
     strategy:
+      fail-fast: false
       matrix:
         os: [ubuntu-latest, windows-latest, macos-13, macos-14]
         python-version: ['3.9', '3.10', '3.11']
